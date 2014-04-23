@@ -122,6 +122,10 @@ div.content {
 	font-size: 20pt;
 }
 
+div.content #about {
+	text-align: justify;
+}
+
 div.content img {
 	width: 60%;
 	height: auto;
@@ -162,6 +166,62 @@ footer {
 
 footer a {
 	color: rgba(255,255,255,.6);
+}
+
+@media only screen and (max-width: 1349px) {
+	
+	div.content {
+		font-size: 15pt;
+	}
+
+	ul.main-nav li {
+		margin: auto 2em;
+		padding: 1em 2.5em;
+	}
+
+}
+
+@media only screen and (max-width: 1016px) {
+	
+	div.content img.photo-src-right, div.content img.photo-src-left {
+		float: none;
+	}
+
+	div.content .photo-desc-left, div.content .photo-desc-right {
+		float: none;
+	}
+
+	div.content img {
+		width: 100%;
+	}
+
+	div.content .photo-desc {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		padding-bottom: 1em;
+	}
+
+
+}
+
+@media only screen and (max-width: 786px) {
+
+	ul.main-nav {
+		padding: 40% 0;
+		width: 100%;
+	}
+
+	ul.main-nav li {
+		display: block;
+		margin: 2em;
+	}
+
+	div.header-top-left, div.scrollTop {
+		font-size: 14pt;
+		left: 5px;
+	}
+
 }
 
 
