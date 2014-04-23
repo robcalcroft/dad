@@ -1,4 +1,4 @@
-$(document).ready(function() {
+window.addEventListener('load', function() {
 	// setTimeout(function() {
 		$('.header-hover-centre').animate({
 			left: "+=5%",

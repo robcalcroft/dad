@@ -15,6 +15,22 @@ body {
 	left: 50%;
 }
 
+a {
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom .3s ease;
+	-webkit-transition: border-bottom .3s ease;
+}
+
+a:hover {
+	border-bottom: 1px solid white;
+}
+
+section {
+	display: block;
+}
+
 div.scrollTop {
 	position: fixed;
 	bottom: 15px;
@@ -107,14 +123,46 @@ div.content {
 }
 
 div.content img {
-	width: 100%;
+	width: 60%;
 	height: auto;
 }
 
-div.content div {
-	margin: 3em auto;
+div.content img .photo-src-left {
+	float: left;
 }
 
+div.content img .photo-src-right {
+	float: right;
+}
+
+div.content .photo-desc {
+	width: 30%;
+	padding: 2em;
+	vertical-align: middle;
+}
+
+div.content .photo-desc-left {
+	float: left;
+}
+
+div.content .photo-desc-right {
+	float: right;
+}
+
+div.content #contact {
+	clear: both;
+}
+
+footer {
+	margin-top: 3em;
+	bottom: 5px;
+	text-align: center;
+	font-size: 13pt;
+}
+
+footer a {
+	color: rgba(255,255,255,.6);
+}
 
 
 
