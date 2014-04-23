@@ -1,7 +1,4 @@
-@font-face {
-    font-family: avant;
-    src: url('font/avant.ttf');
-}
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,700);
 
 html { 
     background: url(../img/bg.jpg) no-repeat center center fixed; 
@@ -12,8 +9,9 @@ html {
 }
 
 body {
-	font-family: avant;
+	font-family: 'Raleway', 'sans-serif';
 	color: white;
+	font-weight: 100;
 }
 
 .centre {
@@ -77,7 +75,7 @@ div.loading-overlay span {
 div.header-hover-centre {
 	margin-top: -127px;
 	margin-left: -134px;
-	left: 47%;
+	left: 45%;
 	text-transform: uppercase;
 	opacity: 0;
 }
@@ -111,7 +109,7 @@ ul.main-nav {
 
 ul.main-nav li {
 	display: inline;
-	border: 2px solid white;
+	border: 1px solid white;
 	padding: 1em 5em;
 	margin: auto 4em;
 	border-radius: 10px;
@@ -136,6 +134,7 @@ div.content #about {
 div.content img {
 	width: 60%;
 	height: auto;
+	box-shadow: 0 0 30px 10px #4F4F4F;
 }
 
 div.content img .photo-src-left {
