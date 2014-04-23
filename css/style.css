@@ -1,0 +1,121 @@
+@font-face {
+    font-family: avant;
+    src: url('font/avant.ttf');
+}
+
+body {
+	font-family: avant;
+	color: white;
+	background-color: black;
+}
+
+.centre {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+div.scrollTop {
+	position: fixed;
+	bottom: 15px;
+	left: 15px;
+	font-size: 20pt;
+}
+
+div.scrollTop:hover {
+	cursor: pointer;
+}
+
+div.header-top-left {
+	position: fixed;
+	top: 15px;
+	left: 15px;
+	font-size: 20pt;
+}
+
+div.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    color: white;
+    display: none;
+}
+
+div.loading-overlay span {
+	font-size: 25pt;
+	margin-top: -33px;
+	margin-left: -28px;
+}
+
+div.header-hover-centre {
+	margin-top: -127px;
+	margin-left: -134px;
+	left: 47%;
+	text-transform: uppercase;
+	opacity: 0;
+}
+
+span.header-hover-centre-top {
+	font-size: 75pt;
+}
+
+span.header-hover-centre-bottom {
+	font-size: 40pt;
+}
+
+span.header-hover-centre-spinner {
+	font-size: 25pt;
+	margin-left: 45%;
+	color: rgba(255,255,255,.7);
+}
+
+
+div.main-container {
+	width: 80%;
+	margin: 0 auto;
+	display: none;
+}
+
+ul.main-nav {
+	padding: 31% 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+ul.main-nav li {
+	display: inline;
+	border: 1px solid white;
+	padding: 1em 5em;
+	margin: auto 4em;
+	border-radius: 10px;
+	transition: .3s;
+	-webkit-transition: .3s ease;
+	cursor: pointer;
+}
+
+ul.main-nav li:hover {
+	background-color: white;
+	color: black;
+}
+
+div.content {
+	font-size: 20pt;
+}
+
+div.content img {
+	width: 100%;
+	height: auto;
+}
+
+div.content div {
+	margin: 3em auto;
+}
+
+
+
+
+
