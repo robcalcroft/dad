@@ -1,5 +1,4 @@
 window.addEventListener('load', function() {
-	// setTimeout(function() {
 		$('.header-hover-centre').animate({
 			left: "+=5%",
 			opacity: 0
@@ -10,7 +9,6 @@ window.addEventListener('load', function() {
 				$('div.main-container').fadeIn('slow');
 			}
 		})
-	// },2000);
 	site.bindClick();
 })
 
