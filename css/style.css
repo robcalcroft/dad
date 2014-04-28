@@ -131,6 +131,8 @@ div.content {
 
 span#song-start { font-weight: bold; }
 
+span#song-start:hover { cursor: pointer; }
+
 div#song-play, div#song-pause {
 	display: none;
 	position: fixed;
