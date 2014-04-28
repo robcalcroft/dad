@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,700);
 
 html { 
-    background: url(../img/bg.png) no-repeat center center fixed; 
+    background: url(../assets/bg.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -102,7 +102,6 @@ div.main-container {
 }
 
 ul.main-nav {
-	padding: 31% 0;
 	list-style-type: none;
 	text-align: center;
 }
@@ -125,6 +124,16 @@ ul.main-nav li:hover {
 }
 
 div.content {
+	font-size: 20pt;
+}
+
+span#song-start { font-weight: bold; }
+
+div#song-play, div#song-pause {
+	display: none;
+	position: fixed;
+	top: 50px;
+	left: 20px;
 	font-size: 20pt;
 }
 
@@ -215,7 +224,7 @@ footer a {
 
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 823px) {
 
 	ul.main-nav {
 		padding: 40% 0;
@@ -227,7 +236,7 @@ footer a {
 		margin: 2em;
 	}
 
-	div.header-top-left, div.scrollTop {
+	div.header-top-left, div#song-pause, div#song-play, div.scrollTop {
 		font-size: 14pt;
 		left: 5px;
 	}

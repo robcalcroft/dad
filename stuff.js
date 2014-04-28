@@ -10,6 +10,9 @@ window.addEventListener('load', function() {
 			}
 		})
 	site.bindClick();
+	site.navHeightCalc();
+	site.musicPlayer.addBindings();
+	$(window).on('resize', site.navHeightCalc);
 })
 
 var site = {
@@ -26,5 +29,50 @@ var site = {
 				scrollTop: '0'
 			}, 500);
 		})
+	},
+
+	navHeightCalc : function() {
+		var height = window.innerHeight / 2;
+		console.log(height);
+		$('ul.main-nav').css({'padding-top': height - 56 + 'px', 'padding-bottom' : height + 56 + 'px'});
+		// DO IT FOR RESPONSIVE!!!!!!!
+	},
+
+	musicPlayer : {
+
+		play : function() {
+			$('#bg-track')[0].play()
+			$('#bg-track')[0].volume = .2;
+		},
+
+		pause : function() {
+			$('#bg-track')[0].pause();
+		},
+
+		volDown : function() {
+			$('#bg-track')[0].volume -= .1;
+		},
+
+		volUp : function() {
+			$('#bg-track')[0].volume += .1;
+		},
+
+		addBindings : function() {
+			$('#song-start').click(function() {
+				site.musicPlayer.play();
+				$('#song-pause').fadeIn('slow');
+			})
+			$('#song-pause').click(function() {
+				site.musicPlayer.pause();
+				$(this).hide();
+				$('#song-play').show();
+			})
+			$('#song-play').click(function() {
+				site.musicPlayer.play();
+				$(this).hide();
+				$('#song-pause').show();
+			})
+		}
+
 	}
 }
