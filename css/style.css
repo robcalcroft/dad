@@ -117,10 +117,12 @@ ul.main-nav li {
 	cursor: pointer;
 }
 
-li#r:hover { color: #FC4949; } li#b:hover { color: #249BF0; } li#g:hover { color: #0DB84B }
+li#r { border-color: #FC4949; } li#b { border-color: #249BF0; } li#g { border-color: #0DB84B }
 
 ul.main-nav li:hover {
 	background-color: white;
+	border-color: white !important;
+	color: black;
 }
 
 div.content {
