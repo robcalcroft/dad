@@ -1,0 +1,5 @@
+## START PHP
+AddType application/x-httpd-php .php
+Action application/x-httpd-php /cgi-bin/php4.cgi
+## STOP PHP
+AddType audio/ogg .oga
